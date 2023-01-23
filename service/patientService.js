@@ -1,7 +1,7 @@
 import patientModel from '../models/patientModel.js'
 
 
-export async function save(name,username,password,email,place,phone,role){
+export async function save(name,username,password,email,place,phone,role,photo){
    const result = new patientModel({
     name,
     phone,
@@ -9,7 +9,8 @@ export async function save(name,username,password,email,place,phone,role){
     place,
     username,
     email,
-    role
+    role,
+    photo
    })
    await result.save()
    return {result}

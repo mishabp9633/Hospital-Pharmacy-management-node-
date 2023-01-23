@@ -3,11 +3,15 @@ import {
     postData,getAllDatas,getSingleDatas,updateData,deleteData
 } from '../controller/patientController.js'
 
+ import { upload } from '../middlewares/multerMiddleware.js'
+
+
 
 const router = express.Router()
 
 
-router.post('/',postData)
+
+router.post('/',upload.single('photo'),postData)
 
 router.get('/',getAllDatas)
 

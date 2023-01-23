@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 mongoose.set('strictQuery', false)
 
 
-const connection_string = 'mongodb://localhost:27017/pharma_care'
+const connection_string = 'mongodb://localhost:27017/pharma_care_repeat'
 
 export async function Initialize() {
     try {

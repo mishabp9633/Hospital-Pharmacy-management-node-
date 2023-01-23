@@ -43,6 +43,9 @@ const patientSchema = new mongoose.Schema({
     role:{
         type:String,
         required:true
+    },
+    photo:{
+        type:String
     }
     
 })
